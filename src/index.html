@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--~~~~~~~~~~~~~~~ Favicon ~~~~~~~~~~~~~~~-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon" />
+    <!--~~~~~~~~~~~~~~~ Font Awesome ~~~~~~~~~~~~~~~-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <!--~~~~~~~~~~~~~~~ Remix Icon ~~~~~~~~~~~~~~~-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!--  Swiper's CSS -->
+
+    <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
+    <link href="/src/output.css" rel="stylesheet" />
+
+    <title>responsive || burger website</title>
+  </head>
+  <body>
+    <!--~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~-->
+    <header class="bg-primaryColor fixed top-0 left-0 w-full z-50">
+      <nav class="container relative h-14 flex justify-between items-center">
+        <div>
+          <a class="text-2xl uppercase font-oswald"
+            >Bur<span class="text-secondaryColor">ger</span></a
+          >
+        </div>
+        <div
+          id="nav-menu"
+          class="hidden absolute top-0 left-0 w-full py-14 bg-primaryColor border-b border-secondaryColor md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto"
+        >
+          <ul class="flex flex-col text-center gap-5 md:flex-row">
+            <li>
+              <a
+                href="#"
+                class="nav__link hover:text-secondaryColor ease-in duration-200"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav__link hover:text-secondaryColor ease-in duration-200"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav__link hover:text-secondaryColor ease-in duration-200"
+                >Menu</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav__link hover:text-secondaryColor ease-in duration-200"
+                >Review</a
+              >
+            </li>
+            <li>
+              <a
+                href="#"
+                class="nav__link hover:text-secondaryColor ease-in duration-200"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div
+            id="nav-close"
+            class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden"
+          >
+            <i class="ri-close-line"></i>
+          </div>
+        </div>
+        <div class="flex items-center gap-5">
+          <i class="ri-moon-line cursor-pointer ml-4 text-xl"></i>
+          <div class="md:hidden" id="hamburger">
+            <i class="ri-menu-2-line cursor-pointer text-xl"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!--~~~~~~~~~~~~~~~ Home ~~~~~~~~~~~~~~~-->
+      <section id="home">
+        <div class="container flex flex-col items-center gap-10 md:flex-row">
+          <div class="mx-auto md:basis-1/2 lg:basis:2/5 animate-movingY">
+            <img
+              src="./images/home-image.png"
+              alt="Home Image"
+              class="w-60 md:w-full"
+            />
+          </div>
+          <div class="text-center md:basis-1/2 md:text-start lg:basis-3/5">
+            <h1 class="home__title">HAPPY TUMMY WITH TASTY BURGERS.</h1>
+            <div class="separator my-80 mx-auto md:mx-0"></div>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+              laudantium deleniti excepturi nulla odit reprehenderit? Temporibus
+              rem, doloribus praesentium ipsam, nam saepe culpa fugit
+              architecto, minus commodi sit aliquam asperiores modi inventore
+              voluptatem ullam? Quidem ut aperiam eaque totam sequi?
+            </p>
+            <div
+              class="text-base flex items-center justify-center gap-4 py-10 md:justify-start md:gap-20"
+            >
+              <div class="text-center">
+                <i
+                  class="fa-solid fa-utensils text-secondaryColor text-4xl"
+                ></i>
+                <br />
+                Delicious
+              </div>
+
+              <div class="text-center">
+                <i class="fa-solid fa-droplet text-secondaryColor text-4xl"></i>
+                <br />
+                Fresh
+              </div>
+
+              <div class="text-center">
+                <i class="fa-brands fa-envira text-secondaryColor text-4xl"></i>
+                <br />
+                Organic
+              </div>
+            </div>
+            <a href="#" class="btn btn-primary">Learn More</a>
+          </div>
+        </div>
+      </section>
+      <!--~~~~~~~~~~~~~~~ Category ~~~~~~~~~~~~~~~-->
+
+      <!--~~~~~~~~~~~~~~~ Promo ~~~~~~~~~~~~~~~-->
+
+      <!--~~~~~~~~~~~~~~~ About ~~~~~~~~~~~~~~~-->
+
+      <!--~~~~~~~~~~~~~~~ Menu ~~~~~~~~~~~~~~~-->
+
+      <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
+
+      <!--~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~-->
+    </main>
+    <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
+    <footer></footer>
+
+    <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
+
+    <!--~~~~~~~~~~~~~~~ Main.js ~~~~~~~~~~~~~~~-->
+    <script src="main.js"></script>
+  </body>
+</html>
