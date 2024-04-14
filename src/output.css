@@ -791,6 +791,10 @@ section{
   place-items: center;
 }
 
+.items-start{
+  align-items: flex-start;
+}
+
 .items-center{
   align-items: center;
 }
@@ -841,6 +845,24 @@ section{
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.space-y-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
+.space-y-8 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.space-x-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+
 .overflow-hidden{
   overflow: hidden;
 }
@@ -861,9 +883,18 @@ section{
   border-bottom-width: 1px;
 }
 
+.border-t{
+  border-top-width: 1px;
+}
+
 .border-secondaryColor{
   --tw-border-opacity: 1;
   border-color: rgb(255 204 0 / var(--tw-border-opacity));
+}
+
+.border-primaryColorLight{
+  --tw-border-opacity: 1;
+  border-color: rgb(1 13 120 / var(--tw-border-opacity));
 }
 
 .bg-blackColor{
@@ -942,6 +973,10 @@ section{
   padding-top: 1.25rem;
 }
 
+.pb-5{
+  padding-bottom: 1.25rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -982,6 +1017,11 @@ section{
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .uppercase{
@@ -1078,6 +1118,11 @@ section{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.hover\:translate-y-1:hover{
+  --tw-translate-y: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .hover\:scale-110:hover{
   --tw-scale-x: 1.1;
   --tw-scale-y: 1.1;
@@ -1169,6 +1214,10 @@ section{
 
   .md\:justify-start{
     justify-content: flex-start;
+  }
+
+  .md\:justify-between{
+    justify-content: space-between;
   }
 
   .md\:gap-20{
