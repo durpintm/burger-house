@@ -767,6 +767,10 @@ section{
   text-align: center;
 }
 
+.text-justify{
+  text-align: justify;
+}
+
 .font-oswald{
   font-family: Oswald, sans-serif;
 }
