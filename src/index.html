@@ -18,6 +18,10 @@
       rel="stylesheet"
     />
     <!--  Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
 
     <!--~~~~~~~~~~~~~~~ CSS ~~~~~~~~~~~~~~~-->
     <link href="/src/output.css" rel="stylesheet" />
@@ -704,6 +708,140 @@
 
       <!--~~~~~~~~~~~~~~~ Review ~~~~~~~~~~~~~~~-->
 
+      <section id="review" class="bg-primaryColorLight py-20">
+        <div class="container">
+          <div class="max-w-md mx-auto text-center">
+            <h2 class="section__title">CUSTOMER REVIEW</h2>
+            <div class="separator mx-auto"></div>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
+              architecto nisi eaque soluta debitis delectus quam?
+            </p>
+          </div>
+
+          <div class="swiper py-10">
+            <ul class="swiper-wrapper">
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                  <p class="paragraph">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+                    repellendus eos, iusto illo consequatur maxime molestiae
+                    tempore!
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="images/review-1.jpg"
+                      alt="Review Image"
+                      class="w-12 h-12 rounded-full"
+                    />
+                    <div class="ml-2">
+                      <p class="font-oswald uppercase">John Doe</p>
+                      <p class="paragraph">Designer</p>
+                    </div>
+                    <i
+                      class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"
+                    ></i>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                  <p class="paragraph">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+                    repellendus eos, iusto illo consequatur maxime molestiae
+                    tempore!
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="images/review-2.jpg"
+                      alt="Review Image"
+                      class="w-12 h-12 rounded-full"
+                    />
+                    <div class="ml-2">
+                      <p class="font-oswald uppercase">John Doe</p>
+                      <p class="paragraph">Designer</p>
+                    </div>
+                    <i
+                      class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"
+                    ></i>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                  <p class="paragraph">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+                    repellendus eos, iusto illo consequatur maxime molestiae
+                    tempore!
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="images/review-3.jpg"
+                      alt="Review Image"
+                      class="w-12 h-12 rounded-full"
+                    />
+                    <div class="ml-2">
+                      <p class="font-oswald uppercase">John Doe</p>
+                      <p class="paragraph">Designer</p>
+                    </div>
+                    <i
+                      class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"
+                    ></i>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                  <p class="paragraph">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+                    repellendus eos, iusto illo consequatur maxime molestiae
+                    tempore!
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="images/review-4.jpg"
+                      alt="Review Image"
+                      class="w-12 h-12 rounded-full"
+                    />
+                    <div class="ml-2">
+                      <p class="font-oswald uppercase">John Doe</p>
+                      <p class="paragraph">Designer</p>
+                    </div>
+                    <i
+                      class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"
+                    ></i>
+                  </div>
+                </div>
+              </li>
+              <li class="swiper-slide">
+                <div class="flex flex-col gap-5 bg-primaryColor rounded-lg p-6">
+                  <p class="paragraph">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea
+                    repellendus eos, iusto illo consequatur maxime molestiae
+                    tempore!
+                  </p>
+                  <div class="flex items-center">
+                    <img
+                      src="images/review-5.jpg"
+                      alt="Review Image"
+                      class="w-12 h-12 rounded-full"
+                    />
+                    <div class="ml-2">
+                      <p class="font-oswald uppercase">John Doe</p>
+                      <p class="paragraph">Designer</p>
+                    </div>
+                    <i
+                      class="fa-solid fa-quote-right text-4xl text-secondaryColor ml-auto"
+                    ></i>
+                  </div>
+                </div>
+              </li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+
       <!--~~~~~~~~~~~~~~~ Contact ~~~~~~~~~~~~~~~-->
     </main>
     <!--~~~~~~~~~~~~~~~ Footer ~~~~~~~~~~~~~~~-->
@@ -712,6 +850,37 @@
     <!--~~~~~~~~~~~~~~~ Scroll Up ~~~~~~~~~~~~~~~-->
 
     <!--~~~~~~~~~~~~~~~ Swiper JS ~~~~~~~~~~~~~~~-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+      const swiper = new Swiper(".swiper", {
+        speed: 400,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        grabCursor: true,
+        breakpoints: {
+          // when window width is >= 640px
+          640: {
+            slidesPerView: 1,
+          },
+          // when window width is >= 768px
+          768: {
+            slidesPerView: 2,
+          },
+          // when window width is >= 1024px
+          1024: {
+            slidesPerView: 3,
+          },
+        },
+      });
+    </script>
 
     <!--~~~~~~~~~~~~~~~ Scroll Reveal ~~~~~~~~~~~~~~~-->
 
