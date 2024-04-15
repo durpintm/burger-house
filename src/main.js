@@ -58,3 +58,27 @@ tabs.forEach((tab) => {
     }
   });
 });
+
+const scrollup = () => {
+  const scrollupBtn = document.getElementById("scroll-up");
+
+  if (this.scrollY >= 250) {
+    scrollupBtn.classList.remove("-bottom-1/2");
+    scrollupBtn.classList.add("bottom-4");
+  } else {
+    scrollupBtn.classList.add("-bottom-1/2");
+    scrollupBtn.classList.remove("bottom-4");
+  }
+};
+window.addEventListener("scroll", scrollup);
+
+const scrollHeader = () => {
+  const header = document.getElementById("header");
+
+  if (this.scrollY >= 50) {
+    header.classList.add("border-b", "border-secondaryColor");
+  } else {
+    header.classList.remove("border-b", "border-secondaryColor");
+  }
+};
+window.addEventListener("scroll", scrollHeader);
