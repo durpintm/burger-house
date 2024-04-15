@@ -1195,6 +1195,26 @@ section{
   opacity: 0.75;
 }
 
+.dark\:border-darkColorLight:is(.dark *){
+  --tw-border-opacity: 1;
+  border-color: rgb(23 23 23 / var(--tw-border-opacity));
+}
+
+.dark\:bg-darkColor:is(.dark *){
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
+.dark\:bg-darkColorLight:is(.dark *){
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 23 23 / var(--tw-bg-opacity));
+}
+
+.dark\:hover\:bg-secondaryColor:hover:is(.dark *){
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 204 0 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 768px){
   .md\:static{
     position: static;
